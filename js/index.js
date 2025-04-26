@@ -12,6 +12,8 @@ function crearTarjetasProductosInicio(productos){
         <button>Agregar al carrito</button>
         `
         contenedorTarjetas.appendChild(nuevoSuscripcion);
+        contenedorTarjetas.getElementsByTagName("button")[0].addEventListener("click", ()=>agregarCarrito
+    (producto))
 
         
     });
