@@ -116,9 +116,9 @@ const showHTML = () => {
         `;
 
 		rowProduct.append(containerProduct);
-
+		
 		total =
-			total + parseFloat(product.quantity * product.price.slice(1));
+			total + product.quantity * parseInt( product.price.slice(1).replace(".",""));
 		totalOfProducts = totalOfProducts + product.quantity;
 	});
 
